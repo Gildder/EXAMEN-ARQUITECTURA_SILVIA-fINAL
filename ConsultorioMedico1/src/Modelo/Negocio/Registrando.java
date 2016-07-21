@@ -14,6 +14,7 @@ public abstract class Registrando {
     public abstract boolean Validar(int id, String nombre,String fechanac,int telefono,String tiposangre,int peso );
     public abstract void Registrar(int id, String nombre,String fechanac,int telefono,String tiposangre,int peso,String estado);
     public abstract void Modificar(int id, String nombre,String fechanac,int telefono,String tiposangre,int peso, String estado );
+    public abstract void Eliminar(int id);
     
     public void Nuevo(int id, String nombre,String fechanac,int telefono,String tiposangre,int peso, String estado ){
         Validar(id, nombre, fechanac, telefono, tiposangre, peso);

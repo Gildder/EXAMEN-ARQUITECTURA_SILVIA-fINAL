@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author silvita
  */
-public class NMedico {
+public class NMedico extends Registrando{
     private DMedico DatoMedico;
 
     public NMedico() {
@@ -30,30 +30,7 @@ public class NMedico {
         return DatoMedico.getCombo();
     }
     
-    public void Registrar(int id,String nombre,String especialidad,String codprofesional,int tur){
-     DatoMedico.setId(id);
-     DatoMedico.setNombre(nombre);
-     DatoMedico.setEspecialidad(especialidad);
-     DatoMedico.setCodprofesional(codprofesional);
-     DatoMedico.setTur(tur);
-     DatoMedico.Registrar();
-     
-     
-    }
-    
-    
-    
-    public void Modificar(int id,String nombre,String especialidad,String codprofesional,int tur){
-     DatoMedico.setId(id);
-     DatoMedico.setNombre(nombre);
-     DatoMedico.setEspecialidad(especialidad);
-     DatoMedico.setCodprofesional(codprofesional);
-     DatoMedico.setTur(tur);
-     DatoMedico.Modificar();
-     
-     
-    }
-    
+    @Override
     public void Eliminar(int id){
         DatoMedico.setId(id);
         DatoMedico.Eliminar();
@@ -63,6 +40,34 @@ public class NMedico {
     
     public DefaultComboBoxModel buscarDoctores(){
         return DatoMedico.getCombo();
+    }
+
+    @Override
+    public boolean Validar(int id, String nombre, String fechanac, int telefono, String tiposangre, int peso) {
+        if(!nombre.equals("") || !fechanac.equals("")||!tiposangre.equals("") ){
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void Registrar(int id, String nombre, String especialidad, int telefono, String codprofesional, int tur, String nulo) {
+     DatoMedico.setId(id);
+     DatoMedico.setNombre(nombre);
+     DatoMedico.setEspecialidad(especialidad);
+     DatoMedico.setCodprofesional(codprofesional);
+     DatoMedico.setTur(tur);
+     DatoMedico.Registrar();
+    }
+
+    @Override
+    public void Modificar(int id, String nombre, String especialidad, int telefono, String codprofesional, int tur, String nulo) {
+        DatoMedico.setId(id);
+        DatoMedico.setNombre(nombre);
+        DatoMedico.setEspecialidad(especialidad);
+        DatoMedico.setCodprofesional(codprofesional);
+        DatoMedico.setTur(tur);
+        DatoMedico.Modificar();
     }
     
 }

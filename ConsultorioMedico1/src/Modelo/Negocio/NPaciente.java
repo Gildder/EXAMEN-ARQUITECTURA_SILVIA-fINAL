@@ -32,6 +32,7 @@ public class NPaciente extends Registrando{
     }
     
         
+    @Override
     public void Eliminar(int id){
         DatoPaciente.setId(id);
         DatoPaciente.Eliminar();

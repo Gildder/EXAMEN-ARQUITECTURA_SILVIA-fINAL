@@ -16,7 +16,6 @@ import java.awt.event.ActionListener;
  * @author silvita
  */
 public class CPaciente implements ActionListener{
-    private NPaciente NegocioPaciente;
     private VPaciente Vista;
     
     //clase plantilla
@@ -24,9 +23,8 @@ public class CPaciente implements ActionListener{
 
    public CPaciente(NPaciente NegocioNPaciente,VPaciente Vista){
         
-        this.NegocioPaciente= NegocioNPaciente;
+        this.nuevoPaciente= NegocioNPaciente;
         this.Vista=Vista;
-        nuevoPaciente = new NPaciente();
         initComponente();
     }  
     
@@ -83,13 +81,8 @@ public class CPaciente implements ActionListener{
                 nuevoPaciente.Actualizar(idM, nombreM, fechanacM,telefonoM,tiposangreM,pesoM,estado);
                 Vista.Actualizate();
                 break;
-        
-//            case btnmodificar:
-//                NegocioPaciente.Modificar(Integer.valueOf(Vista.getjTextField1().getText()), Vista.getjTextField2().getText());
-//                Vista.Actualizate();
-//                break;
             case btneliminar:
-                NegocioPaciente.Eliminar(Integer.valueOf(Vista.getjTextField1().getText()));
+                nuevoPaciente.Eliminar(Integer.valueOf(Vista.getjTextField1().getText()));
                 Vista.Actualizate();
                 break;
           

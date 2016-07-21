@@ -8,6 +8,7 @@ package Control;
 import Modelo.Dato.DTurno;
 import Vista.VMedico;
 import Modelo.Negocio.NMedico;
+import Modelo.Negocio.Registrando;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,11 +18,12 @@ import java.awt.event.ActionListener;
  * @author silvita
  */
 public class CMedico implements ActionListener{
-    NMedico NegocioMedico;
+    //clase plantilla
+    Registrando nuevoMedico;
     VMedico Vista;
 
     public CMedico(NMedico NegocioMedico,VMedico Vista) {
-        this.NegocioMedico = NegocioMedico;
+        this.nuevoMedico = NegocioMedico;
         this.Vista=Vista;
         initComponente();
     }
@@ -54,7 +56,7 @@ public class CMedico implements ActionListener{
                 String codprofesional= Vista.getjTextField4().getText();
                 DTurno tur =(DTurno)Vista.getjComboBox1().getSelectedItem();
                 
-                NegocioMedico.Registrar(id,nombre,especialidad,codprofesional,tur.getId());
+                nuevoMedico.Nuevo(id,nombre,especialidad,0,codprofesional,tur.getId(),"");
                 Vista.Actualizate();
                 break;
             case btnmodificar:
@@ -64,13 +66,13 @@ public class CMedico implements ActionListener{
                 String codprofesionalM= Vista.getjTextField4().getText();
                 DTurno turM =(DTurno)Vista.getjComboBox1().getSelectedItem();
                
-                NegocioMedico.Modificar(idM,nombreM,especialidadM,codprofesionalM,turM.getId());
+                nuevoMedico.Actualizar(idM,nombreM,especialidadM,0,codprofesionalM,turM.getId(),"");
                 Vista.Actualizate();
                 
                
                 break;
             case btneliminar:
-                NegocioMedico.Eliminar(Integer.valueOf(Vista.getjTextField1().getText()));
+                nuevoMedico.Eliminar(Integer.valueOf(Vista.getjTextField1().getText()));
                 Vista.Actualizate();
                 break;
                 

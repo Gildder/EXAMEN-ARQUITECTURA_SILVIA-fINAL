@@ -22,29 +22,6 @@ public class DHoraTrabaja {
         con= new Conexion();
     }
 
-    public int getIdmedi() {
-        return idmedi;
-    }
-
-    public void setIdmedi(int idmedi) {
-        this.idmedi = idmedi;
-    }
-
-    public int getIdtur() {
-        return idtur;
-    }
-
-    public void setIdtur(int idtur) {
-        this.idtur = idtur;
-    }
-
-    public String getDia() {
-        return dia;
-    }
-
-    public void setDia(String dia) {
-        this.dia = dia;
-    }
     
     
     public void Registrar(){
@@ -114,4 +91,29 @@ public class DHoraTrabaja {
 //    
 //    t.Registrar();
 //     } 
+    
+    
+    public int getIdmedi() {
+        return idmedi;
+    }
+
+    public void setIdmedi(int idmedi) {
+        this.idmedi = idmedi;
+    }
+
+    public int getIdtur() {
+        return idtur;
+    }
+
+    public void setIdtur(int idtur) {
+        this.idtur = idtur;
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
 }
