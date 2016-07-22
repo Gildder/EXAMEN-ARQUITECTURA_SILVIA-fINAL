@@ -80,6 +80,9 @@ public class VConsulta extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("HORA :");
 
+        jTextField2.setText("12/07/2016");
+
+        jTextField3.setText("12:12");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);

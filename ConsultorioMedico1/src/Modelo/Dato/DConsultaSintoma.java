@@ -19,7 +19,7 @@ public class DConsultaSintoma {
     private String tiempo;
 
     public DConsultaSintoma() {
-        con.getInstance();
+        con = con.getInstance();
     }
 
     public int getIdsinto() {

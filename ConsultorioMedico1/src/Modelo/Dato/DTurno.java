@@ -20,7 +20,7 @@ public class DTurno {
     private String horafin;
 
     public DTurno() {
-        con=new Conexion();
+        con = con.getInstance();
     }
 
     public int getId() {

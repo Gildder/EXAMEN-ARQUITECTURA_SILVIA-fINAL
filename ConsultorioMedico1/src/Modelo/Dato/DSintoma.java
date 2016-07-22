@@ -19,7 +19,7 @@ public class DSintoma {
    private String descripcion;
    
    public DSintoma (){
-   con = new Conexion();
+        con = con.getInstance();
    }
 
     public int getId() {

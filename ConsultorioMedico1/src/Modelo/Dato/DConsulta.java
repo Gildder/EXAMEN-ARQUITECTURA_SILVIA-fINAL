@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class DConsulta {
    private Conexion con;
+    public boolean isNuevo=true;
     private int id;
     private String fecha;
     private String hora;
@@ -25,7 +26,7 @@ public class DConsulta {
    
 
     public DConsulta() {
-        con.getInstance();
+        con = con.getInstance();
     }
 
     public int getId() {
@@ -159,6 +160,14 @@ public class DConsulta {
       
       return tabla;
     }
+     
+     @Override
+    public Object clone() throws CloneNotSupportedException {
+        
+        DConsulta e=new DConsulta();
+        return e;
+    }
+     
 //     
 //   public static void main(String[] args){
 //        DConsulta t=new DConsulta();

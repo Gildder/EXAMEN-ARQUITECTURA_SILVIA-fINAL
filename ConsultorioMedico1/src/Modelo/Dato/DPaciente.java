@@ -26,7 +26,7 @@ public class DPaciente {
     private String estadoCivil;
 
     public DPaciente() {
-    con = new Conexion();
+        con=con.getInstance();
     }
 
     public int getId() {

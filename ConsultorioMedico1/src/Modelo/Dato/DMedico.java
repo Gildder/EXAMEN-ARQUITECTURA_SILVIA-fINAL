@@ -22,7 +22,7 @@ public class DMedico {
     private int tur;
 
     public DMedico() {
-    con = new Conexion();
+        con = con.getInstance();
     }
 
     public int getId() {

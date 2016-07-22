@@ -23,7 +23,7 @@ public class DNotaPago {
     private int usu;
 
     public DNotaPago() {
-    con = new Conexion();
+        con = con.getInstance();
     }
 
     public int getId() {

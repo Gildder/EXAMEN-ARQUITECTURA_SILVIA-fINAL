@@ -23,7 +23,7 @@ public class DUsuario {
     private String contrasena;
 
     public DUsuario() {
-        con=new Conexion();
+        con = con.getInstance();
     }
 
     public int getId() {

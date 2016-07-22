@@ -19,7 +19,7 @@ public class DHoraTrabaja {
     private String dia;
 
     public DHoraTrabaja() {
-        con= new Conexion();
+        con = con.getInstance();
     }
 
     

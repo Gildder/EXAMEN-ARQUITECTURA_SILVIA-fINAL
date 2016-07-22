@@ -19,7 +19,7 @@ public class DDiagnostico {
     private String descripcion;
    
     public DDiagnostico() {
-    con = new Conexion();
+        con = con.getInstance();
     }
 
     public int getId() {

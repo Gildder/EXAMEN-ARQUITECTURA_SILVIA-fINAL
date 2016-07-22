@@ -11,20 +11,6 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/DDiagnostico.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Control/CPaciente.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Vista/VConsulta.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/Conexion.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Control/CConsulta.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Negocio/NPaciente.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/DPaciente.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Negocio/NMedico.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/estado/EstadoAccion.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Negocio/Registrando.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/estado/Casado.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Dato/estado/Accion.java</file>
-            <file>file:/I:/EXAMEN%20ARQUITECTURA_SILVIA%20fINAL/ConsultorioMedico1/src/Modelo/Negocio/NFachada.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
